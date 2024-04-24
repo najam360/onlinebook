@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: 'Sriracha', cursive;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #f1efef;
+  padding: 35px 20px;
+}
+.nav-items a:hover{
+  color: red;
+}
+
+
+
+
+
+.intro {
+    padding-left: 3%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("simg/logo2.PNG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 28px;
+  }
+  
+  .intro h1 {
+    font-family: sans-serif;
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    animation: float 6s ease-out infinite;
+  }
+
+@keyframes float {
+ 70%{
+   transform: translateY(70px);
+ }
+ 
+}
+.example{
+  margin-top: 7%;
+  margin-bottom: 5%;
+  text-align: center;
+  position: relative;
+  width: 70%;
+  border-radius: 2rem;
+  box-shadow: rgba(4, 3, 3, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
+  place-items: center;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: calc(2rem + 1vmin);
+  width: 100%;
+  
+}
+
+.example p{
+  font-size: large;
+  padding: 5%;
+}
+.example h4{
+  font-size: large;
+}
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .testimonial {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+
+  h1 {
+    margin: 20px 0;
+  }
+
+  .line {
+    height: 2px;
+    width: 6rem;
+    background-color: #e26c4f;
+    margin-bottom: calc(3rem + 2vmin);
+  }
+
+  .arrow-wrapper {
+    position: relative;
+    width: 70%;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow: hidden;
+    place-items: center;
+  }
+
+  .review-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: calc(2rem + 1vmin);
+    width: 100%;
+  }
+
+  #imgBox {
+    border-radius: 50%;
+    width: calc(6rem + 4vmin);
+    height: calc(6rem + 4vmin);
+    position: relative;
+    box-shadow: 5px -3px #e26c4f;
+    background-size: cover;
+    margin-bottom: calc(0.7rem + 0.5vmin);
+  }
+
+  #name {
+    margin-bottom: calc(0.7rem + 0.5vmin);
+    font-size: calc(1rem + 0.5vmin);
+    letter-spacing: calc(0.1rem + 0.1vmin);
+    font-weight: bold;
+  }
+
+  #profession {
+    font-size: calc(0.8rem + 0.3vmin);
+    margin-bottom: calc(0.7rem + 0.5vmin);
+    color: #e26c4f;
+  }
+
+  #description {
+    font-size: calc(0.8rem + 0.3vmin);
+    width: 70%;
+    max-width: 40rem;
+    text-align: center;
+    margin-bottom: calc(1.4rem + 1vmin);
+    color: rgb(92, 92, 92);
+    line-height: 2rem;
+  }
+
+  .arrow {
+    width: calc(1.4rem + 0.6vmin);
+    height: calc(1.4rem + 0.6vmin);
+    border: solid #e26c4f;
+    border-width: 0 calc(0.5rem + 0.2vmin) calc(0.5rem + 0.2vmin) 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .arrow:hover {
+    transition: 0.3s;
+    transform: scale(1.15);
+  }
+
+  .left-arrow-wrap {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: rotate(135deg);
+  }
+
+  .right-arrow-wrap {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: rotate(-45deg);
+  }
+
+
+  .btn{
+    margin-left: 40%;
+    margin-bottom: 5%;
+    
+   }
+   .btn a{
+    text-decoration: none;
+    color: #d26b6b;
+   }
+   .btn a:hover{
+    text-decoration:underline;
+   text-transform: capitalize;
+  
+   }
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .footer {
+    background-color: black;
+    color: #fefefe;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer .heading {
+    color: #fefefe;
+    max-width: 1010px;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+  }
+  
+  .footer .content p {
+    margin-bottom: 1.3rem;
+  }
+  
+  .footer .content a {
+    text-decoration: none;
+    color: #fefefe;
+  }
+  
+  .footer .content a:hover {
+    border-bottom: 1px solid #971717;
+  }
+  
+  .footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  footer hr {
+    margin: 2rem 0;
+  }
+  
+  @media (max-width: 767px) {
+    .footer .content {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+    }
+  
+    .footer {
+      position: unset;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .footer .content,
+    .footer {
+      font-size: 14px;
+    }
+  }
+  
+  @media (orientation: landscape) and (max-height: 500px) {
+    .footer {
+      position: unset;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 900px) {
+    .testimonial {
+      width: 100%;
+    }
+  }
+
+  /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .nav-items a {
+    padding: 15px 0;
+  }
+  
+  .logo {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .logo {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .btn {
+    width: 20%;
+  }
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+div.btn {
+  font-size: 14px;
+}
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+div.btn {
+  font-size: 10px;
+}
+}
+

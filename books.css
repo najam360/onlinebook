@@ -1,0 +1,290 @@
+/* books.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif; /* Use Nunito font for the body */
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px 30px; /* Added padding to the header */
+}
+
+.header .logo {
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #f1efef;
+  padding: 15px 20px; /* Adjusted padding for nav links */
+}
+
+.nav-items a:hover {
+  color: red;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 20px; /* Added padding to the container */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow rows to wrap */
+  justify-content: center;
+  max-width: 1200px; /* Added max-width to limit container width */
+  margin: 0 auto; /* Center the container */
+}
+
+.book {
+  flex: 0 0 calc(20% - 20px); /* Set the width of each book */
+  margin: 10px; /* Adjust margin between books */
+}
+
+.book img {
+  width: 100%; /* Make images fill their container */
+  height: auto;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.book img:hover {
+  transform: scale(1.1);
+}
+
+.book a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Optional: Center images horizontally and vertically */
+.book img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-bar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  width: 60%; /* Adjust according to your preference */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: aquamarine;
+}
+
+.book img {
+  width: 100px;
+  height: 200px;
+  margin: 10px;
+}
+
+
+.footer {
+  background-color: black;
+  color: #fefefe;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .heading {
+  color: #fefefe;
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer hr {
+  margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .footer {
+    position: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .testimonial {
+    width: 100%;
+  }
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+div.example {
+  font-size: 80px;
+}
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+div.example {
+  font-size: 30px;
+}
+}
+
+
+
+@media screen and (max-width: 900px) {
+.btn {
+  width: 20%;
+}
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+div.btn {
+font-size: 14px;
+}
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+div.btn {
+font-size: 10px;
+}
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .nav-items a {
+    padding: 15px 0;
+  }
+  
+  .logo {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .logo {
+    margin-left: 0;
+    text-align: center;
+  }
+}
